@@ -13,6 +13,11 @@ module.exports = {
     historyApiFallback: true,
     inline: true
   },
+  resolve: {
+    alias: {
+      page: path.join(__dirname, "./src/page")
+    }
+  },
   module: {
     rules: [
       {
