@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
+import Login from "page/login/Login.jsx"
 import Home from "page/home/Home.jsx"
 
 export default class App extends Component {
@@ -20,8 +21,9 @@ export default class App extends Component {
     return this.state.hasError? null: (
       <BrowserRouter>
         <Switch>
+          <Route  path="/login" component={ Login } />
           <Route  path="/home" component={ Home } />
-          <Redirect to="/home" />
+          <Redirect to="/login" />
         </Switch>
       </BrowserRouter>
     )
