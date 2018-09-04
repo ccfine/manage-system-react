@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+}
+.aside {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-right: 1px solid #000;
+}
+.content {
+  padding: 50px;
+}

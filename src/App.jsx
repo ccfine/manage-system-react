@@ -21,8 +21,8 @@ export default class App extends Component {
     return this.state.hasError? null: (
       <BrowserRouter>
         <Switch>
-          <Route  path="/login" component={ Login } />
-          <Route  path="/home" component={ Home } />
+          <Route path="/login" component={ Login } />
+          <Route path="/home" component={ Home } />
           <Redirect to="/login" />
         </Switch>
       </BrowserRouter>
